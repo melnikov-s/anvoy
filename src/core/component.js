@@ -44,14 +44,13 @@ export default class Component {
         }
 
         this.props = props;
-        this._nextState = this.state;
         this.context = null;
         this.state = null;
-        this._nextState = null;
 
         this._stateUpdates = [];
         this._parent = parent;
         this._nextProps = this.props;
+        this._nextState = this.state;
     }
 
     getRef() {
